@@ -1,6 +1,6 @@
 var mongo = require('mongodb').MongoClient
-
-mongo.connect('mongodb://127.0.0.1:27017/' + process.argv[2], function(err, db) {
+var Luis = 'mongodb://127.0.0.1:27017/';
+mongo.connect(Luis + process.argv[2], function(err, db) {
   if (err) throw err
   var collection = db.collection('users')
   collection.update({

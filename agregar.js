@@ -1,8 +1,8 @@
 var mongo = require('mongodb').MongoClient;
 var size = process.argv[2];
+var Luis = 'mongodb://127.0.0.1:27017/learnyoumongo';
 
-
-mongo.connect('mongodb://127.0.0.1:27017/learnyoumongo',
+mongo.connect(Luis,
  function(err, db) {
   if (err) 
   throw err
