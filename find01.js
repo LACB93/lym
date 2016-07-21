@@ -1,4 +1,9 @@
+// Conectarnos a la base de datos
+// Paso 1. Cargar el driver en nuestro script 
 var mongo = require('mongodb').MongoClient
+// Paso 2. El drivger de Mongodb nos proporciona 
+// un cliente, por lo que lo extraemos de
+// la libreria
 var age = process.argv[2]
 
 var Luis = 'mongodb://127.0.0.1:27017/learnyoumongo'
