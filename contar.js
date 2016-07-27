@@ -1,6 +1,6 @@
 var mongo = require('mongodb').MongoClient;
 var age = process.argv[2];
-var Luis = 'mongodb://localhost:27017/learnyoumongo';
+var LuisA = 'mongodb://localhost:27017/learnyoumongo';
 mongo.connect(Luis,
  function(err, db) {
   if (err) 
